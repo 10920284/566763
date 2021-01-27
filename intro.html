@@ -1,1 +1,205 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+background:#212121;
+}
+div.scrollmenu {
+  background-image: linear-gradient(to right,#141E30,#243B55);
+  
+  overflow: auto;
+  white-space: nowrap;
+  position:sticky;
+  top:0;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  background-image: linear-gradient(to right,#A1FFCE,#FAFFD1);
+  color: black;
+  text-align: center;
+  padding: 8px;
+  pointer:none;
+  cursor:none;
+  text-decoration: none;
+  font-weight:bold;
+  margin:8px;
+  font-size:17px;
+  border-radius:10px;
+}
+
+div.scrollmenu a:hover {
+  transform:scale(1.05);
+  }
+  
+  
+  img { 
+  width:90%;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  table {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin:10px;
+  }
+ .sw {
+ animation: 4s infinite ok;
+ }
+ @keyframes ok {
+ 0%{opacity:100%;}
+ 50%{opacity:10%}
+ 100%{opacity:100%}
+ }
+ table a{
+ text-decoration:none;
+ 
+ }
+ #ac { 
+ 
+color:white;background:#FF2E63}
+  </style>
+  </head>
+  <body>
+  
+  <div class="scrollmenu">
+  <a href="https://10920284.github.io/566763/home.html">Front Page</a>
+  <a href="https://10920284.github.io/566763/intro.html" id="ac">Introduction</a>
+  <a href="https://10920284.github.io/566763/page1.html">Page 1</a>
+  <a href="https://10920284.github.io/566763/page2.html">Page 2</a>
+  <a href="https://10920284.github.io/566763/page3.html">Page 3</a>
+  <a href="https://10920284.github.io/566763/page4.html">Page 4</a>
+  <a href="https://10920284.github.io/566763/page5.html">Page 5</a>  
+  <a href="https://10920284.github.io/566763/page6.html">Page 6</a>
+  <a href="https://10920284.github.io/566763/page7.html">Page 7</a>
+  <a href="https://10920284.github.io/566763/page8.html">Page 8</a>
+  <a href="https://10920284.github.io/566763/page9.html">Page 9</a>
+  <a href="https://10920284.github.io/566763/page10.html">Page 10</a>
+  <a href="https://10920284.github.io/566763/page11.html">Page 11</a>
+  <a href="https://10920284.github.io/566763/page12.html">Page 12</a>
+  <a href="https://10920284.github.io/566763/page13.html">Page 13</a>
+  <a href="https://10920284.github.io/566763/page14.html">Page 14</a>
+  <a href="https://10920284.github.io/566763/page15.html">Page 15</a>
+  <a href="https://10920284.github.io/566763/page16.html">Page 16</a>
+  <a href="https://10920284.github.io/566763/page17.html">Page 17</a>
+  <a href="https://10920284.github.io/566763/thoughts.html">Your thoughts</a>
+  <a href="https://10920284.github.io/566763/back.html">Back Page</a>
+  <h6 style="position:fixed;right:5px;margin-top:0;color:white" class="sw">Sweep menu ←→</h6>
+  </div>
+  <br><br>
+  <center>
+  <img src="https://1.bp.blogspot.com/-xJ5OCb5pEN0/YBGGxdjMO5I/AAAAAAAAGIE/9x-mNtb8sogByT7uNtNJ3gLVnWR1rugygCLcBGAsYHQ/s2048/20210127_212804.png">
+  
+  </center>
+  
+  <style type="text/css">
+  
+ 
+  ul
+  {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+  }
+  ul li
+  {
+  position: relative;
+  padding: 20px;
+  border: 2px solid white;
+  list-style: none;
+  margin: 0 -1px;
+  }
+  ul li:before
+  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff0;
+  z-index: -1;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  }
+  ul li:hover:before
+  {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 0.5s;
+  }
+  ul li.prev span:nth-child(1)
+  {
+  position: relative;
+  top: -4px;
+  right: -6px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  transform: rotate(45deg);
+  border-top: none;
+  border-right: none;
+  }
+  ul li.prev span:nth-child(2)
+  {
+  display: inline-block;
+  width: 0px;
+  overflow: hidden;
+  transition: width 0.5s;
+  font-size: 26px;
+  }
+  ul li:hover.prev span:nth-child(2)
+  {
+  width: 60px;
+  }
+  
+  
+  
+  ul li.next span:nth-child(2)
+  {
+  position: relative;
+  top: -4px;
+  left: -6px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  transform: rotate(45deg);
+  border-bottom: none;
+  border-left: none;
+  }
+  ul li.next span:nth-child(1)
+  {
+  display: inline-block;
+  width: 0px;
+  overflow: hidden;
+  transition: width 0.5s;
+  font-size: 26px;
+  }
+  ul li:hover.next span:nth-child(1)
+  {
+  width: 60px;
+  }
+  </style>
+  <ul>
+  <li class="prev"><span></span><span><a href="https://10920284.github.io/566763/home.html" style="text-decoration:none;color:black">Prev</a></span></li>
+ <li class="next"><span><a href="https://10920284.github.io/566763/page1.html" style="text-decoration:none;color:black">Next</a></span><span></span></li>
+ </ul>
+  
+  
+  
+  
+  </body>
+  </html>
